@@ -50,10 +50,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
 
   @override
   Widget build(BuildContext context) {
-    print('the device hieght is : ' +
-        MediaQuery.of(context).size.height.toString());
-    print('the device width is : ' +
-        MediaQuery.of(context).size.width.toString());
+    // print('the device hieght is : ' +
+    //     MediaQuery.of(context).size.height.toString());
+    // print('the device width is : ' +
+    //     MediaQuery.of(context).size.width.toString());
     return Column(
       children: [
         Container(
@@ -87,7 +87,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
           return InkWell(
             onTap: () {
               Get.to(PopularFoodDetailPage());
-              print('now seelected index is : ${index}');
+              print('now selected index is : ${index}');
             },
             child: Row(
               children: [

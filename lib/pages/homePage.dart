@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:food_develry_app/color/commonColor.dart';
+import 'package:food_develry_app/data/api/api_client.dart';
 import 'package:food_develry_app/dimension/dimension.dart';
 import 'package:food_develry_app/pages/food_main_page.dart';
 import 'package:food_develry_app/reusable/BigText.dart';
@@ -57,10 +58,15 @@ class _HomePageState extends State<HomePage> {
                         BorderRadius.circular(Dimension.borderRadius10),
                     color: FColor.headingtext,
                   ),
-                  child: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                    size: Dimension.iconSize20,
+                  child: InkWell(
+                    onTap: (){
+
+                    },
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: Dimension.iconSize20,
+                    ),
                   )),
             ]),
       ),
